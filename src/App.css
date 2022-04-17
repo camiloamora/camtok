@@ -1,15 +1,20 @@
 .App {
     background: #000;
     height: 100vh;
-    text-align: center;
     display: grid;
     place-content: center;
+    overflow: hidden;
 }
 
 main {
-    border: 1px solid #fff;
-    aspect-ratio: 9/16;
-    max-width: 375px;
-    width: 100vw;
-    border-radius: 3px;
+  aspect-ratio: 9/16;
+  border-radius: 3px;
+  overflow-y: scroll;
+  display: block;
+  height: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.no-player {
+    opacity: 0;
 }
