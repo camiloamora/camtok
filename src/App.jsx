@@ -1,10 +1,11 @@
 import './App.css'
+import FeedVideos from './components/FeedVideos'
 
 function App () {
   return (
     <div className='App'>
       <main>
-        TikTok Clone
+        <FeedVideos />
       </main>
     </div>
   )
